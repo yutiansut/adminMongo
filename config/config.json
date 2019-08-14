@@ -1,1 +1,8 @@
-{}
+{
+  "connections": {
+    "quantaxis": {
+      "connection_string": "mongodb://localhost:27017/quantaxis",
+      "connection_options": {}
+    }
+  }
+}
