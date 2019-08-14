@@ -8,12 +8,9 @@ apt update -y\
 RUN \
 apt-get install -y nodejs\
 && apt-get install npm \
-&& npm install npm -g \
-&& npm install forever -g \
-&& npm install cnpm -g \
-&& apt install git
+&& npm install npm -g 
 
-RUN cd /root \
+RUN cd /root && apt install git\
 && git clone https://github.com/yutiansut/adminmongo \
 && cd adminmongo && npm install
 
