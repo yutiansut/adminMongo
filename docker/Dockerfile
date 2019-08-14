@@ -3,8 +3,10 @@ FROM ubuntu:16.04
 RUN \
 apt update -y\
 && apt install -y curl \
-&& curl -sL https://deb.nodesource.com/setup_8.x | bash -\
-&& apt-get install -y nodejs\
+&& curl -sL https://deb.nodesource.com/setup_8.x | bash -
+
+RUN \
+apt-get install -y nodejs\
 && apt-get install npm \
 && npm install npm -g \
 && npm install forever -g \
