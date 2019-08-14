@@ -15,5 +15,6 @@ RUN cd /root \
 && git clone https://github.com/yutiansut/adminmongo \
 && cd adminmongo && npm install
 
+EXPOSE 12345
 CMD ["cd /root/adminmongo && npm start"]
 
